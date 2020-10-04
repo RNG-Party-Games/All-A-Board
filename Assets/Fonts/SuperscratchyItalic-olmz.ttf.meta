@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 1db249325e9243c42b9e7fd2bfba4725
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Superscratchy
+  fontNames:
+  - Superscratchy
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d28b46bb283230045808441c916536b8, type: 3}
+  - {fileID: 12800000, guid: 2710fbfc42dc5624e80f844ca16df914, type: 3}
+  - {fileID: 12800000, guid: 8c2312eef47f9f64e942497b15e823e4, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
