@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyTrigger : MonoBehaviour
 {
     public Animator anim;
+    public AudioClip revealSFX;
     public string reveal;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,10 @@ public class EnemyTrigger : MonoBehaviour
 
     public void OnTriggerEnter(Collider other) {
         if (other.tag == "MainCamera") {
-            anim.Play(reveal);
+            if (!anim.GetComponent<Enemy>().activated) {
+                anim.Play(reveal);
+                SFXController.instance.PlaySFX(revealSFX, 1, false);
+            }
         }
     }
 }

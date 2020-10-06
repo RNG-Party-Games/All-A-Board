@@ -7,13 +7,14 @@ public class Activatable : MonoBehaviour
     public bool activated = false;
     public int loop;
     // Start is called before the first frame update
-    void Start()
+    protected void Start()
     {
-        
+        // reporting to loop manager
+        LoopManager.instance.AddActive(this);
     }
 
     // Update is called once per frame
-    void Update()
+    protected void Update()
     {
 
     }
@@ -23,7 +24,10 @@ public class Activatable : MonoBehaviour
         LoopManager.instance.CheckActivations();
     }
 
+    public virtual void CustomReset() {}
+
     public void Reset() {
+        CustomReset();
         activated = false;
     }
 }

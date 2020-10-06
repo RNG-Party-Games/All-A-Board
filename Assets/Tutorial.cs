@@ -1,0 +1,24 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+
+public class Tutorial : MonoBehaviour
+{
+    public TextMeshProUGUI tut1, tut2;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if(Input.GetMouseButtonDown(1)) {
+            tut1.enabled = false;
+            tut2.enabled = true;
+        }
+        
+    }
+}

@@ -19,6 +19,6 @@ public class BulletMeter : MonoBehaviour
     }
 
     public void UpdateTime(float sec) {
-        number.text = sec.ToString("F1");
+        number.text = ((int) Mathf.Floor(sec)).ToString();
     }
 }

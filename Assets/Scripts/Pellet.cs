@@ -17,7 +17,6 @@ public class Pellet : MonoBehaviour
         if(Time.time - startTime > 5) {
             Destroy(gameObject);
         }
-        //transform.LookAt(Camera.main.transform.position);
     }
 
     public void OnTriggerEnter(Collider other) {

@@ -178,6 +178,9 @@ MonoBehaviour:
   loop: 0
   anim: {fileID: 1533986005982139188}
   activationAnim: ImpHide
+  triggerAnim: 
+  noTrigger: 0
+  deathSFX: {fileID: 8300000, guid: 3e2ecf62b3e543d41b6bbe569e13a5ae, type: 3}
 --- !u!1 &1533986006079406776
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,4 +352,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1533986005982139188}
+  revealSFX: {fileID: 8300000, guid: 4d6adab9ff2b39240924d5124d4ae1d8, type: 3}
   reveal: ImpReveal
